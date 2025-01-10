@@ -113,6 +113,10 @@ const techStacks = [
   { icon: "MUI.svg", language: "Material UI" },
   { icon: "vercel.svg", language: "Vercel" },
   { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  { icon: "djangoproject.svg", language: "Django" },
+  { icon: "python.svg", language: "Python" },
+  { icon: "typeScript.svg", language: "TypeScript" },
+  { icon: "linux.svg", language: "Linux" },
 ];
 
 export default function FullWidthTabs() {
@@ -149,7 +153,6 @@ export default function FullWidthTabs() {
       }));
 
       const certificateData = certificateSnapshot.docs.map((doc) => doc.data());
-
       setProjects(projectData);
       setCertificates(certificateData);
 

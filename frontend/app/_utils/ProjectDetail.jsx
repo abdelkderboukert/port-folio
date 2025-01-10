@@ -83,7 +83,7 @@ const handleGithubClick = (githubLink) => {
     Swal.fire({
       icon: 'info',
       title: 'Source Code Private',
-      text: 'Maaf, source code untuk proyek ini bersifat privat.',
+      text: 'we cant find information about this project because is private.',
       confirmButtonText: 'Mengerti',
       confirmButtonColor: '#3085d6',
       background: '#030014',
@@ -110,7 +110,7 @@ const ProjectDetails = () => {
         ...selectedProject,
         Features: selectedProject.Features || [],
         TechStack: selectedProject.TechStack || [],
-        Github: selectedProject.Github || 'https://github.com/EkiZR',
+        Github: selectedProject.Github || 'https://github.com/abdelkderboukert/',
       };
       setProject(enhancedProject);
     }
@@ -223,13 +223,15 @@ const ProjectDetails = () => {
               <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group">
               
                 <div className="absolute inset-0 bg-gradient-to-t from-[#030014] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <img
+                {project.Img.length > 0 ? <><img
                   src={project.Img}
                   alt={project.Title}
                   className="w-full  object-cover transform transition-transform duration-700 will-change-transform group-hover:scale-105"
                   onLoad={() => setIsImageLoaded(true)}
                 />
-                <div className="absolute inset-0 border-2 border-white/0 group-hover:border-white/10 transition-colors duration-300 rounded-2xl" />
+                <div className="absolute inset-0 border-2 border-white/0 group-hover:border-white/10 transition-colors duration-300 rounded-2xl" /> </>
+                : null}
+                
               </div>
 
               {/* Fitur Utama */}

@@ -6,6 +6,7 @@ import Komentar from "./Commentar";
 import Swal from "sweetalert2";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { sendEmail } from "@/lib";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -46,7 +47,8 @@ const ContactPage = () => {
       // Get form data
       const form = e.target;
       const formData = new FormData(form);
-
+      sendEmail({email: "mhab200307@gmail.com", name: "mhab200307", message: "test"})
+      console.log(formData);
       // Submit form
       await form.submit();
 
@@ -131,7 +133,7 @@ const ContactPage = () => {
             </div>
 
             <form 
-              action="https://formsubmit.co/ekizulfarrachman@gmail.com"
+              // action="https://formsubmit.co/abdelkaderboukart@gmail.com"
               method="POST"
               onSubmit={handleSubmit}
               className="space-y-6"

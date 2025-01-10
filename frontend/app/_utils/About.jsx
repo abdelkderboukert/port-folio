@@ -227,7 +227,7 @@ const AboutPage = () => {
                 data-aos="fade-right"
                 data-aos-duration="1300"
               >
-                Eki Zulfar Rachman
+                Abdelkader Boukert
               </span>
             </h2>
 
@@ -236,16 +236,26 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              seorang siswa Teknik Jaringan Komputer dan Telekomunikasi yang
-              tertarik dalam pengembangan Front-End. Saya berfokus pada
-              menciptakan pengalaman digital yang menarik dan selalu berusaha
-              memberikan solusi terbaik dalam setiap proyek.
+              motivated and results-oriented{" "}
+              <span className=" selection:bg-black">Software Engineer</span>{" "}
+              with <span className=" selection:bg-black">3 years</span> of
+              experience in software development,{" "}
+              <span className=" selection:bg-black">web development</span>,{" "}
+              <span className=" selection:bg-black">mobile development</span>.
+              Proven ability to develop, and implement software solutions; write
+              clean, efficient, and maintainable code; work effectively in
+              Agile/Scrum environments; troubleshoot and debug complex issues.
+              Eager to contribute to a challenging and innovative environment
+              where I can utilize my technical skills and passion for software
+              development to achieve project goals.
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
               <a
-                href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo"
+                href="/data-strectur.txt"
                 className="w-full lg:w-auto"
+                download
+
               >
                 <button
                   data-aos="fade-up"

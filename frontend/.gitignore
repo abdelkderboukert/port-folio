@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+#backend-firebase
+firebase-comment.js
+firebase.js
+data-strectur

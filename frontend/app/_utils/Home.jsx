@@ -107,8 +107,8 @@ const TECH_STACK = [
 ];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/abdelkderboukert" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/ekizr/" },
-  { icon: Instagram, link: "https://www.instagram.com/ekizr_/?hl=id" },
+  { icon: Linkedin, link: "https://www.linkedin.com/in/abdelkader-boukert-517495302/" },
+  { icon: Instagram, link: "https://www.instagram.com/bd_.01x/?hl=id" },
 ];
 
 const Home = () => {
@@ -220,8 +220,8 @@ const Home = () => {
                   data-aos="fade-up"
                   data-aos-delay="1000"
                 >
-                  Menciptakan Website Yang Inovatif, Fungsional, dan
-                  User-Friendly untuk Solusi Digital.
+                  Creating an innovative, functional, and
+                  User-Friendly for Digital Solutions.
                 </p>
 
                 {/* Tech Stack */}

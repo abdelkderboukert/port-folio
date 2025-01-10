@@ -1,0 +1,41 @@
+project {
+    "id": "WhatsApp Clone",
+    "Description": "Proyek ini adalah replika visual dari antarmuka aplikasi WhatsApp, yang dibangun menggunakan HTML, CSS, dan JavaScript. Proyek ini bertujuan untuk meniru desain dan tampilan WhatsApp secara mendetail serta memberikan saya wawasan dalam pengembangan antarmuka web.",
+    "Github": "https://github.com/EkiZR/WhatsClone",
+    "Title": "WhatsApp Clone",
+    "Img": "https://lh3.googleusercontent.com/pw/AP1GczO321A1J5waLZu9cHI4SM30wi1iKspuwHWJZ7eojb6Npb8qyxdmCrjCE0XgwbUPw-pRFlidDsCu62ThCjj2saEHU5jnSX0OBo1AORToXUX93Q52ZGpq1bLFuos_73EtJKsL4C-iQ1ehnlyvqUlRSJAD=w1326-h679-s-no-gm?authuser=0",
+    "Link": "https://ekizr.github.io/WhatsClone/whatsapp.html",
+    "TechStack": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Bootstrap",
+        "SweetAlert2"
+    ],
+    "Features": [
+        "Mengganti judul halaman sesuai keinginan pengguna.",
+        "Dapat mengubah nama kontak",
+        "Mengedit pesan yang sudah dikirimkan.",
+        "Menyesuaikan waktu pengiriman pesan.",
+        "Mengubah status tanda centang (single, double, atau centang biru).",
+        "Memungkinkan tampilan dalam mode layar penuh (Full Screen).",
+        "Menyediakan opsi Mode Gelap dan Mode Terang untuk kenyamanan visual.",
+        "Dapat mengunggah status"
+    ]
+}
+
+certafica{
+    "Img": "https://lh3.googleusercontent.com/pw/AP1GczOHjlE-lvr8njsY8pa2lxoPH8FzFr-4FNnjAMU1ttlTa0X6ubIVYga1cCmKP__rhF2asOzbZxbJeR-OKqwjmH3jde1rL2Bl6wcAJZEsN04BJ9AXAqAiV5bkm1tWzlrdfWgpgvrBFgHh76l8_KcjskBZ=w961-h679-s-no-gm?authuser=0"
+}
+
+
+{
+    "id": "9CjnAEMNBBRxDvwuZeKS",
+    "content": "hay ho đó",
+    "userName": "DinhTienLe",
+    "createdAt": {
+        "seconds": 1735741523,
+        "nanoseconds": 640000000
+    },
+    "profileImage": null
+}
