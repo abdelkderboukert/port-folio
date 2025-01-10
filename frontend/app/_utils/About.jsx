@@ -231,7 +231,7 @@ const AboutPage = () => {
               </span>
             </h2>
 
-            <p
+            <div
               className="text-base sm:text-lg lg:text-xl text-gray-400 leading-relaxed text-justify pb-4 sm:pb-0"
               data-aos="fade-right"
               data-aos-duration="1500"
@@ -248,7 +248,7 @@ const AboutPage = () => {
               Eager to contribute to a challenging and innovative environment
               where I can utilize my technical skills and passion for software
               development to achieve project goals.
-            </p>
+            </div>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
               <a
