@@ -1,4 +1,5 @@
-import React, { useEffect, memo, useMemo } from "react";
+"use client";
+import React, { useEffect, memo, useMemo, useState } from "react";
 import {
   FileText,
   Code,
@@ -125,28 +126,102 @@ const StatCard = memo(
 );
 
 const AboutPage = () => {
-  // Memoized calculations
-  const { totalProjects, totalCertificates, YearExperience } = useMemo(() => {
+  // // Memoized calculations
+  // const { totalProjects, totalCertificates, YearExperience } = useMemo(() => {
+  //   const storedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
+  //   const storedCertificates = JSON.parse(
+  //     localStorage.getItem("certificates") || "[]"
+  //   );
+
+  //   const startDate = new Date("2021-11-06");
+  //   const today = new Date();
+  //   const experience =
+  //     today.getFullYear() -
+  //     startDate.getFullYear() -
+  //     (today <
+  //     new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate())
+  //       ? 1
+  //       : 0);
+
+  //   return {
+  //     totalProjects: storedProjects.length,
+  //     totalCertificates: storedCertificates.length,
+  //     YearExperience: experience,
+  //   };
+  // }, []);
+
+  // // Optimized AOS initialization
+  // useEffect(() => {
+  //   const initAOS = () => {
+  //     AOS.init({
+  //       once: false,
+  //     });
+  //   };
+
+  //   initAOS();
+
+  //   // Debounced resize handler
+  //   let resizeTimer;
+  //   const handleResize = () => {
+  //     clearTimeout(resizeTimer);
+  //     resizeTimer = setTimeout(initAOS, 250);
+  //   };
+
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //     clearTimeout(resizeTimer);
+  //   };
+  // }, []);
+
+  // // Memoized stats data
+  // const statsData = useMemo(
+  //   () => [
+  //     {
+  //       icon: Code,
+  //       color: "from-[#6366f1] to-[#a855f7]",
+  //       value: totalProjects,
+  //       label: "Total Projects",
+  //       description: "Innovative web solutions crafted",
+  //       animation: "fade-right",
+  //     },
+  //     {
+  //       icon: Award,
+  //       color: "from-[#a855f7] to-[#6366f1]",
+  //       value: totalCertificates,
+  //       label: "Certificates",
+  //       description: "Professional skills validated",
+  //       animation: "fade-up",
+  //     },
+  //     {
+  //       icon: Globe,
+  //       color: "from-[#6366f1] to-[#a855f7]",
+  //       value: YearExperience,
+  //       label: "Years of Experience",
+  //       description: "Continuous learning journey",
+  //       animation: "fade-left",
+  //     },
+  //   ],
+  //   [totalProjects, totalCertificates, YearExperience]
+  // );
+  const [totalProjects, setTotalProjects] = useState(0);
+  const [totalCertificates, setTotalCertificates] = useState(0);
+  const [yearExperience, setYearExperience] = useState(0);
+
+  useEffect(() => {
     const storedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
-    const storedCertificates = JSON.parse(
-      localStorage.getItem("certificates") || "[]"
-    );
+    const storedCertificates = JSON.parse(localStorage.getItem("certificates") || "[]");
 
     const startDate = new Date("2021-11-06");
     const today = new Date();
     const experience =
       today.getFullYear() -
       startDate.getFullYear() -
-      (today <
-      new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate())
-        ? 1
-        : 0);
+      (today < new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate()) ? 1 : 0);
 
-    return {
-      totalProjects: storedProjects.length,
-      totalCertificates: storedCertificates.length,
-      YearExperience: experience,
-    };
+    setTotalProjects(storedProjects.length);
+    setTotalCertificates(storedCertificates.length);
+    setYearExperience(experience);
   }, []);
 
   // Optimized AOS initialization
@@ -195,13 +270,13 @@ const AboutPage = () => {
       {
         icon: Globe,
         color: "from-[#6366f1] to-[#a855f7]",
-        value: YearExperience,
+        value: yearExperience,
         label: "Years of Experience",
         description: "Continuous learning journey",
         animation: "fade-left",
       },
     ],
-    [totalProjects, totalCertificates, YearExperience]
+    [totalProjects, totalCertificates, yearExperience]
   );
 
   return (

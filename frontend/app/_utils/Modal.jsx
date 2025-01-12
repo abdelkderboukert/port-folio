@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import { Eye, ArrowRight, ExternalLink } from 'lucide-react';
 

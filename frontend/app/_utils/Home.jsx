@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect, useCallback, memo } from "react";
 import {
   Github,
@@ -111,7 +112,7 @@ const SOCIAL_LINKS = [
   { icon: Instagram, link: "https://www.instagram.com/bd_.01x/?hl=id" },
 ];
 
-const Home = () => {
+const Hom = () => {
   const [text, setText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
   const [wordIndex, setWordIndex] = useState(0);
@@ -305,4 +306,4 @@ const Home = () => {
   );
 };
 
-export default memo(Home);
+export default memo(Hom);

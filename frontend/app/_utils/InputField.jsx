@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 
 const InputField = ({ field, label, icon: Icon, formData, handleChange }) => {
